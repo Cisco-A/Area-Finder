@@ -47,7 +47,7 @@ export default function Sample() {
             Bonny and Clyde Street, Ajao Estate, Lagos
           </h3>
           <p className="text-[12px] font-medium leading-[18px] md:hidden">
-            "450" Reviews (People are raving about the location)
+            &quot;450 Reviews (People are raving about the location)
           </p>
         </div>
 
@@ -57,7 +57,7 @@ export default function Sample() {
               Bonny and Clyde Street, Ajao Estate, Lagos
             </h3>
             <p className="text-[12px] font-medium leading-[18px]">
-              "450" Reviews (People are raving about the location)
+              &quot;450 Reviews (People are raving about the location)
             </p>
           </div>
 
