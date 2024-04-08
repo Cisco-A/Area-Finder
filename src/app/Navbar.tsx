@@ -1,12 +1,13 @@
 import Image from "next/image";
 import profilePic from "../../public/profilePic.png";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
     <div>
       <div className="navbar bg-base-100">
         <div className="flex-1">
-          <a className="btn btn-ghost hover:bg-transparent">
+          <Link href="/" className="btn btn-ghost hover:bg-transparent">
             <svg
               width="92"
               height="30"
@@ -31,10 +32,10 @@ export default function Navbar() {
                 fill="white"
               />
             </svg>
-          </a>
+          </Link>
         </div>
         <div className="flex-none gap-2">
-          <h3 className="text-base font-medium leading-[10px] hidden md:inline-block md:inline-block">Welcome!</h3>
+          <h3 className="text-base font-medium leading-[10px] hidden md:inline-block">Welcome!</h3>
 
           <Image
             src={profilePic}
