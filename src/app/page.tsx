@@ -1,4 +1,5 @@
 import HomeReviewCard from "./components/HomeReviewCard";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -38,17 +39,19 @@ export default function Home() {
                 />
               </label>
 
-              <button
-                type="submit"
-                className="btn btn-primary h-[50px] w-[146px] rounded-md hover:btn-secondary"
-              >
-                SEARCH
-              </button>
+              <Link href="/all-reviews">
+                <button
+                  type="submit"
+                  className="btn btn-primary h-[50px] w-[146px] rounded-md hover:btn-secondary"
+                >
+                  SEARCH
+                </button>
+              </Link>
             </form>
           </div>
         </div>
 
-        <div className="overflow-hidden relative justify-between hidden h-[90%] grid-cols-2 gap-4 bg-[#F1F3F4] md:grid">
+        <div className="relative hidden h-[90%] grid-cols-2 justify-between gap-4 overflow-hidden bg-[#F1F3F4] md:grid">
           <HomeReviewCard className="order-1" />
           <HomeReviewCard className="order-2" />
           <HomeReviewCard className="order-3" />
