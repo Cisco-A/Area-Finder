@@ -21,6 +21,7 @@ export default function Sample() {
 
   function handleReviewSubmit(review: ReviewType) {
     setReviews([...reviews, review]);
+    setIsModalOpen(false);
   }
 
   return (
